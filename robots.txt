@@ -1,0 +1,28 @@
+
+# Arquivo robots.txt para Loja Integrada
+
+# Bloquear acesso a áreas não relevantes para SEO
+User-agent: *
+Disallow: /carrinho
+Disallow: /checkout
+Disallow: /busca
+
+# Permitir acesso ao resto do site
+Allow: /
+
+# Páginas específicas de categorias, produtos e páginas do blog devem ser indexadas
+User-agent: *
+Disallow: /login
+Disallow: /cadastro
+Disallow: /esqueci-senha
+
+# Bloquear páginas de administração, se existirem
+Disallow: /admin
+
+# Permitir que o Googlebot e outros motores de busca indexem a loja
+User-agent: Googlebot
+Allow: /
+
+# Respeitar as regras anteriores para outros bots
+User-agent: *
+Allow: /
